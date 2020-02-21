@@ -1,0 +1,937 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+   background-color: #f4f4f4;
+}
+:root{
+    --highlight-color: #e8491d ;
+    --header-color:#35424a;
+    --text-color:white;
+    --paragraph-font: 'Lato', sans-serif;
+    --nav-font: 'Bebas Neue', cursive;
+    --header-font: 'Roboto', sans-serif;
+}
+
+/* --------header----------- */
+header{
+  
+    min-height: 80px;
+    background-color:var(--header-color);
+    border-bottom: 2px solid var(--highlight-color) ;
+}
+.header_name{
+  
+    font-size: 21px;
+    font-family: var(--header-font);
+    text-transform: uppercase;
+    position: absolute;
+    left: 6%;
+    top: 2%;
+    color: var(--text-color);
+}
+ .header_name  span{
+    color: var(--highlight-color);
+    
+}
+
+.navigation{
+  
+    position: absolute;
+    left: 75%;
+    top: 8%;
+    margin-right: 0px;
+
+}
+.navigation , a{
+    display: grid;
+    grid-template-columns: repeat(3 , 45%) ;
+    grid-template-rows: repeat(1 , 1fr);
+}
+.navigation , a{
+   
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 30px;
+    color: var(--text-color);
+    font-family: var(--nav-font);
+    
+    
+    
+}
+.navigation , a:not(.current_page):hover{
+    color:var(--highlight-color);
+}
+.navigation .home_button:hover{
+    color:green;
+}
+.current_page{
+    color: var(--highlight-color);
+}
+
+
+/* ------------image---------------- */
+.full_content2{
+    display: grid;
+  
+    
+   
+}
+/* --------------content 1---------- */
+.full_content2{
+    min-height: 440px;
+    background-image: url('student-849825_1920.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+  
+}
+.full_content2 > h1{
+  
+   text-transform: capitalize;
+   margin-top: 70px;
+   font-size: 41px;
+   font-family: var(--header-font);
+   font-weight: 550px;
+   color: var(--text-color);
+
+
+     
+   
+    
+} 
+.full_content2 > p{
+    width: 50%;
+    font-size: 20px;
+    font-family: var(--paragraph-font);
+    font-weight: 400px;
+    margin-left: 25%;
+    margin-top: -160px;
+ 
+}
+.full_content3{
+    display: grid;
+    grid-template-columns: repeat(3 ,30%);
+    grid-template-rows: repeat(1 , 690px);
+    grid-column-gap: 0.7rem;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+/* --------------content 3---------- */
+
+.full_content3{
+    display: grid;
+    grid-template-columns: repeat(3 ,30%);
+    grid-template-rows: repeat(1 , 450px);
+    grid-column-gap: 0.7rem;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+/* -----------Mixed of  content1 of full content3--------------- */
+.sub_content1 > h1 , .sub_content2 > h1{
+    text-transform: uppercase;
+}
+.sub_content3 > h1{
+    text-transform: capitalize;
+}
+.content1 > img , .content2 > img , .content3 > img{
+    width: 70%;
+  
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.sub_content1 > h1 , .sub_content1 > p , .sub_content2 > h1 , .sub_content2 > p , .sub_content3 > h1 , .sub_content3 > p{
+    text-align: center;
+}
+.sub_content1 > h1 , .sub_content2 > h1 , .sub_content3 > h1{
+    font-family: var(--header-font);
+    font-size: 29px;
+    font-weight: 610px;
+}
+.sub_content1 > p , .sub_content2 > p , .sub_content3 > p {
+    width: 80%;
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+    margin-left: 10%;
+    font-weight: 400px;
+  
+}
+
+
+
+
+/* -------------full .content4------------------ */
+.footer1{
+    background-color:var(--highlight-color);
+  
+    min-height: 50px;
+   padding-top: 10px;
+   text-align: center;
+   margin-top: 5px;
+
+}
+.footer1 > p{
+
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: var(--header-font);
+   
+}
+
+
+
+/* -----------For About------------------- */
+
+
+/* --------------Header---------------- */
+.home_button{
+   color: green;
+    
+}
+/* --------------Form Section---------------- */
+.form_section{
+    min-height: 70px;
+    background-color: var(--header-color);
+    position: relative;
+}
+.form_section > h1{
+    color: var(--text-color);
+    font-family: var(--header-font);
+    text-transform: capitalize;
+    font-size: 27px;
+    font-weight: 550;
+    position: absolute;
+    top: 19%;
+    left: 6%;
+    /* width: 40%; */
+}
+.form{
+    position: absolute;
+    right: 10%;
+    top: 26%;
+    width: 60%;
+    text-align: right;
+   
+}
+form > input[type="text"]{
+    padding: 6px;
+    width: 40%;
+    font-size: 15px;
+    font-family: var(--header-font);
+    border: 2px solid rgb(58, 45, 56);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    
+}
+.abt_button{
+    padding: 6px;
+    background-color: var(--highlight-color) ;
+    border: 2px solid rgb(58, 45, 56);
+    border-radius: 3px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: var(--header-font);
+    font-weight: 450;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.abt_button:hover{
+    box-shadow: 2px 3px 3px 2px rgb(40, 54, 63);
+}
+form > input[type="text"]:hover{
+    box-shadow: 2px 3px 3px 2px rgb(40, 54, 63);
+}
+form > input[type="text"]:placeholder-shown{
+   
+    border: 2px solid green;
+    
+}
+
+/* --------------Content3---------------- */
+.abt_content3{
+    display: grid;
+    grid-template-columns: repeat(2 , 45%);
+    grid-template-rows: repeat(2 , minmax(200px));
+    margin-left: 6%;
+    grid-row-gap: 0.01mm;
+}
+/* --------------abt Row 1---------------- */
+.abt_row1{
+    padding-bottom: 0px;
+}
+.abt_row1 > h2{
+    text-transform: capitalize;
+    font-family: var(--nav-font);
+    font-size: 26px;
+    font-weight: 450px;
+    color:var(--header-color);
+    letter-spacing: 0.17rem;
+}
+.dotted{
+    font-size: 33px;
+}
+.abt_row1 > p{
+    width: 95%;
+    text-align: justify;
+    margin-left: 3%;
+    background-color:rgb(206, 188, 188);
+    padding: 7px;
+    font-family: var(--paragraph-font);
+    font-size: 15px;
+    line-height: 2ch;
+
+}
+/* --------------abt Row 2---------------- */
+.abt_row2{
+  
+    justify-self: right;
+    align-self: center;
+    width: 60%;
+    height: 80%;
+}
+.abt_row2 > h1 {
+    color: rgb(17, 17, 17);
+    text-transform: capitalize;
+    font-family: var(--header-font);
+    font-size: 22px;
+    padding-bottom: 7px;
+}
+
+/* --------------abt Row 3---------------- */
+
+.abt_row3{
+    padding-top:5px;
+  
+}
+
+
+/* --------------Mixed of Content 3---------------- */
+.abt_row2 > p , .abt_row3 > p{
+    margin-left: 3%;
+    width: 95%;
+    text-align: justify;
+    font-family: var(--paragraph-font);
+    line-height: 2ch;
+    background-color:var(--header-color);
+    padding: 7px;
+    color: var(--text-color);
+
+}
+.abt_row1 , .abt_row2 , .abt_row3{
+    padding: 10px;
+    }
+
+/* --------------Footer---------------- */
+/* .footer2{
+    background-color:var(--highlight-color);
+  
+    min-height: 50px;
+   
+   text-align: center;
+   margin-top: 5px;
+   
+}
+.footer2 > p{
+
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: var(--header-font);
+   
+} */
+
+
+
+
+/* ---------------For Services------------------- */
+.ser_heading > h2 {
+    margin-left: 6%;
+    padding-top: 2px;
+    padding-bottom: 17px;
+    text-transform: capitalize;
+    font-family: var(--nav-font);
+    color: var(--highlight-color);
+    font-size: 26px;
+    letter-spacing: 0.1rem;
+    font-weight: 350px;
+}
+.ser_dotted{
+    font-size: 35px;
+    margin-left: 2px;
+}
+
+ .ser_content30{
+    display: grid;
+    grid-template-columns: repeat(2 , 45%);
+    grid-template-rows:repeat(4 , minmax(200px)) ;
+    justify-content: start;
+    grid-row-gap: 0.2rem;
+    /* padding: 5px; */
+    margin-left: 6%;
+    grid-column-gap: 2rem;
+ }
+/* ------------ser row 1--------------- */
+ .ser_row1{
+     background-color:rgb(167, 152, 152);
+ }
+
+/* ------------ser row 2--------------- */
+.ser_row2{
+    background-color:rgb(136, 143, 148);
+    grid-row: 2/3;
+}
+/* ------------ser row 3--------------- */
+.ser_row3{
+    background-color:rgb(146, 163, 163);
+    grid-row: 3/4;
+}
+.ser_row4{
+    background-color: green;
+    justify-self: end;
+    grid-column: 2/3;
+    width: 70%;
+    align-content: start;
+}
+/* ------------ mixed of ser rows --------------- */
+.ser_row1 > h2 , .ser_row2 > h2 , .ser_row3 > h2{
+    margin-left: 2%;
+    font-family: var(--header-font);
+    text-transform: capitalize;
+    font-weight:bold;
+    padding-bottom: 4px;
+
+}
+.ser_row1 > p , .ser_row2 > p , .ser_row3 > p {
+    margin-left: 7%;
+    padding: 4px;
+    font-family: var(--paragraph-font);
+    font-size: 16px;
+    width: 90%;
+    text-align: justify;
+    
+
+}
+.prices{
+    text-transform: capitalize;
+    padding-bottom: 7px;
+}
+ .ser_row2 ,  .ser_row1 ,  .ser_row3{
+     padding: 5px;
+ }
+/* ------------aside bar--------------- */
+.ser3_form{
+    background-color:var(--header-color);
+    
+    /* width: 24%; */
+    min-height: 350px;
+    /* position: absolute;
+    right: 10%;
+    top: 30%; */
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 150px;
+    width: 100%;
+    justify-content: end;
+    align-content: start.ser;
+}
+.aside_form{
+    background-color: red;
+}
+/* .ser3_form > h2{
+    text-transform: capitalize;
+    color: var(--text-color);
+    font-family: var(--header-font);
+    text-align: center;
+    padding-top: 5px;
+    font-weight: 400;
+}
+.ser3_form  input[type="text"]{
+    width: 80%;
+    margin-left: 5%;
+}
+.form2 , #textarea{
+    margin-left: 5%;
+    font-family: var(--header-font);
+    font-size: 16px;
+    color: var(--text-color);
+}
+.btn2{
+    padding: 5px;
+    margin-top: 2px;
+    background-color: var(--highlight-color);
+    margin-left: 5%;
+    text-transform: capitalize;
+    font-family: var(--paragraph-font);
+    font-size: 13px;
+    
+
+}
+.btn2:hover{
+    box-shadow: 2px 3px 3px 2px rgb(26, 28, 29);
+}
+.aside_form > input[type="text"]:hover{
+    box-shadow: 2px 3px 3px 2px rgb(40, 54, 63);
+}
+.aside_form > input[type="text"]:placeholder-shown{
+   
+    border: 2px solid green;
+    
+} */
+/* --------meadia---------------- */
+
+@media (min-width:1921px){
+    .navigation , a {
+   
+        float: right;
+       font-size: 38px;
+          top: 2%;
+       
+          
+           
+       }
+       .header_name{
+        font-size:32px;
+        top: 0%;
+    }
+    .full_content2 > h1{
+        font-size: 67px;
+
+    }
+    .full_content2 > p{
+        font-size: 34px;
+        
+    }
+    .full_content3{
+        display: grid;
+        grid-template-columns: repeat(3 ,30%);
+        grid-template-rows: repeat(1 , 740px);
+        grid-column-gap: 0.7rem;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+
+/* -----------Mixed of  content1 of full content3--------------- */
+
+
+
+
+.sub_content1 > h1 , .sub_content2 > h1 , .sub_content3 > h1{
+    font-family: var(--header-font);
+    font-size: 45px;
+    font-weight: 810px;
+    margin-left: -29px;
+}
+.sub_content1 > p , .sub_content2 > p , .sub_content3 > p {
+    width: 80%;
+    font-family: var(--paragraph-font);
+    font-size: 28px;
+    margin-left: 10%;
+    font-weight: 400px;
+  
+}
+.footer_content{
+   
+    padding-top: 10px;
+}
+/* .ser3_form{
+    width: 35%;
+    top: 20%;
+ } */
+
+}
+@media screen and (max-width:1920px) and (min-width:1367px){
+    .navigation , a {
+   
+        float: right;
+       font-size: 38px;
+          top: 2%;
+       
+          
+           
+       }
+       .header_name{
+        font-size:32px;
+        top: 0%;
+    }
+    .full_content2 > h1{
+        font-size: 67px;
+
+    }
+    .full_content2 > p{
+        font-size: 34px;
+        
+    }
+    .full_content3{
+        display: grid;
+        grid-template-columns: repeat(3 ,30%);
+        grid-template-rows: repeat(1 , 600px);
+        grid-column-gap: 0.7rem;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+
+/* -----------Mixed of  content1 of full content3--------------- */
+
+
+
+
+.sub_content1 > h1 , .sub_content2 > h1 , .sub_content3 > h1{
+    font-family: var(--header-font);
+    font-size: 45px;
+    font-weight: 810px;
+    margin-left: -29px;
+}
+.sub_content1 > p , .sub_content2 > p , .sub_content3 > p {
+    width: 80%;
+    font-family: var(--paragraph-font);
+    font-size: 28px;
+    margin-left: 10%;
+    font-weight: 400px;
+  
+}
+.footer_content{
+   
+    padding-top: 10px;
+}
+/* .ser3_form{
+    width: 35%;
+    top: 27%;
+ } */
+
+
+}
+@media screen and (max-width:1366px) and (min-width:991px){
+   
+    .navigation , a{
+   
+     float: right;
+    
+       top: 2%;
+    
+       
+        
+    }
+    .header_name{
+        font-size:22px;
+        top: 0%;
+    }
+    /* .ser3_form{
+        width: 30%;
+        top: 27%;
+     }
+     */
+}
+
+@media screen and (max-width:990px) and (min-width:801px){
+    .navigation , a{
+        margin-left: -19%;
+        top:1%;
+        padding:7px;
+        /* padding-top: -20px; */
+       
+        
+    }
+    .header_name{
+        font-size:18px;
+        top: 0%;
+    }
+    header{
+        min-height: 65px;
+    }
+    /* .ser3_form{
+        width: 35%;
+        top: 27%;
+     } */
+    
+}
+
+@media screen and (max-width:800px) and (min-width:601px){
+   
+    .header_name{
+        font-size:15px;
+        top: 3%;
+        left: 2%;
+    }
+    .navigation , a{
+        margin-left: -22%;
+        top:1%;
+        padding:8px;
+       
+        
+    }
+    .full_content2 > h1{
+        font-size: 33px;
+    }
+    .full_content2 > p{
+            /* width: 60%; */
+    }
+    
+    .footer1{
+        margin-top: 10px;
+    }
+    /* ------for about--------- */
+    .form_section > h1{
+       
+        font-size: 24px;
+       
+    }
+    .form_section{
+        min-height: 50px;
+    }
+    .form{
+        position: absolute;
+        right: 8%;
+        top: 24%;
+        width: 60%;
+        text-align: right;
+       
+    }
+    form > input[type="text"]{
+        padding: 4px;
+        width: 40%;
+        font-size: 14px;
+       
+        
+    }
+    .abt_button{
+        padding: 5px;
+       
+        font-size: 13px;
+       
+        font-weight: 350;
+      
+    }
+   
+    .abt_row2{
+        margin-right: 44%;
+       
+    }
+    .abt_row2 > h1{
+        margin-left: 4%;
+    }
+    /* .ser3_form{
+       width: 35%;
+       top: 27%;
+    } */
+   
+}
+@media screen and (max-width:600px) and (min-width:481px){
+   
+    .full_content2 > h1{
+        font-size: 21px;
+        margin-left: 5px;
+    }
+    .header_name{
+        font-size:14px;
+        top: 0%;
+        left: 2%;
+        
+    }
+    header{
+        min-height: 60px;
+    }
+    .full_content2 > p{
+       margin-top: -164px;
+       width: 370px;
+       margin-left: 100px;
+       font-size: 15px;
+    }
+    .navigation , a{
+        margin-left: -35%;
+        top: 1%;
+        padding:4px;
+        font-size: 25px;
+        display: grid;
+        justify-self: center;
+       
+        
+    }
+    .full_content3{
+        display: grid;
+        grid-template-columns: repeat(1 ,50%);
+        grid-template-rows: repeat(3 ,340px);
+        grid-column-gap: 0.7rem;
+        justify-content: center;
+        margin-top: 20px;
+        gird
+    }
+    .footer1{
+        margin-top: 10px;
+    }
+    /* -------------for about------------ */
+    .form_section > h1{
+       /* width: 49%; */
+        font-size: 18px;
+       
+    }
+    .form_section{
+        min-height: 50px;
+    }
+    .form{
+        position: absolute;
+        right: 1%;
+        top: 24%;
+        width: 50%;
+        text-align: right;
+       
+    }
+    form > input[type="text"]{
+        padding: 2px;
+        /* width: 45%; */
+        font-size: 14px;
+       
+        
+    }
+    .abt_button{
+        padding: 4px;
+       
+        font-size: 13px;
+       
+        font-weight: 350;
+      
+    }
+    /* .ser3_form{
+        min-height: 210px;
+    } */
+    
+}
+@media screen and (max-width:480px) and (min-width:321px){
+    .header_name{
+        font-size:11px;
+        top: 1%;
+        left: 2%;
+        
+    }
+    .full_content2 > p{
+        /* margin-top: 0px; */
+    }
+    .navigation , a{
+        margin-left: -32%;
+        top:4%;
+        padding:4px;
+        font-size: 20px;
+       
+        
+    }
+
+     /* ------for about--------- */
+     .form_section > h1{
+    
+        font-size: 16px;
+        font-weight: bold;
+        width: 50%;
+       
+    }
+    .form_section{
+        min-height: 50px;
+    }
+    .form{
+        position: absolute;
+        right: 8%;
+        top: 24%;
+        width: 60%;
+        text-align: right;
+       
+    }
+    form > input[type="text"]{
+        padding: 2px;
+        width: 40%;
+        font-size: 14px;
+       
+        
+    }
+    .abt_button{
+        padding: 4px;
+       
+        font-size: 12px;
+       
+        font-weight: 300;
+      
+    }
+    .abt_content3{
+        display: grid;
+        grid-template-columns: repeat(1 , 80%);
+        grid-template-rows: repeat(3 , minmax(150px));
+        margin-left: 6%;
+        grid-row-gap: 0.001rem;
+        justify-content: center;
+        align-content: center;
+    }
+    .abt_row2{
+        /* margin-right: 46%; */
+        width: 85%;
+        margin-left: 29%;
+        margin-top: 5px;
+        justify-self: center;
+       
+    }
+    /* .abt_row2 > h1{
+        margin-left: 4%;
+    } */
+}
+@media (max-width:320px){
+    .header_name{
+        font-size:10px;
+        top: 2px;
+        /* left: 2%; */
+        
+    }
+    header{
+        width: 100%;
+    }
+    .full_content2 > p{
+    margin-left: 2px;
+    padding-top: 9px;
+        font-size: 16px;
+    }
+    .full_content2 > h1{
+       font-size: 17px;
+       text-align: justify;
+        }
+    .navigation , a{
+        margin-left: -32%;
+        
+        padding:6px;
+        font-size: 20px;
+        top: 16px;
+       justify-content: center;
+        
+    }
+    .footer_content{
+        margin-left: -30px;
+        /* left: -10px; */
+        font-size: 14px;
+        padding-top: 10px;
+    }
+    .form_section h1{
+        font-size: 13px;
+        width: 30%;
+    }
+    .form{
+        right: 0px;
+    }
+    .abt_row2{
+       justify-self: center;
+       align-self: center;
+       margin-left: 76px;
+      margin-top: -25px;
+      padding-bottom: 35px;
+    }
+   
+
+}
